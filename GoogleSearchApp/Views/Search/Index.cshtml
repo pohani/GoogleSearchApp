@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model SearchViewModel
+
+<div>
+
+    <p class="text-danger text-center">@ViewBag.err</p>
+
+    <h1 class="display-4 text-center pb-5">Search</h1>
+    <form asp-controller="Search" asp-action="Index" method="post" class="pb-3">
+
+        <div class="form-group">
+            <label for="SearchWord">Search keyword</label>
+            <input asp-for="SearchWord" type="text" name="SearchWord" class="form-control" placeholder="Enter keyword"/>
+        </div>
+
+        <div class="form-group">
+            <label for="filterWord">Filter by</label>
+            <input asp-for="filterWord" type="text" name="filterWord" class="form-control" placeholder="Enter filter" />
+        </div>
+
+        <input type="submit" name="submit" value="Search" class="btn btn-primary" />
+    </form>
+
+    
+    <form asp-controller="Search" asp-action="Excel" method="post">
+        <input hidden asp-for="SearchWord" type="text" name="SearchWord" />
+        <input hidden asp-for="filterWord" type="text" name="filterWord" />
+        <input type="submit" name="submit" value="Download Excel" class="btn btn-primary" />
+    </form>
+
+    
+    @if (Model.Results != null)
+    {
+        <div class="py-5">
+
+            <table id ="myTable" class="table table-bordered display">
+                <thead >
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Title</th>
+                        <th>Content</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @foreach (var result in Model.Results)
+                    {
+                        <tr>
+                            <td>@result.Id</td>
+                            <td>@result.Name</td>
+                            <td>@result.Title</td>
+                            <td>@result.Content</td>
+                            <td>@result.Link</td>
+                        </tr>
+                    }
+                </tbody>
+
+                </table>
+
+        </div>
+    }
+
+</div>

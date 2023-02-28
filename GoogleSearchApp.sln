@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleSearchApp", "GoogleSearchApp\GoogleSearchApp.csproj", "{DD5EF70E-A5A9-4B47-A0BF-5B6C0987DFA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAL", "BAL\BAL.csproj", "{655034C3-8549-4D62-B127-44C5BF6CD643}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{A38FD2C4-721B-4275-BA7E-AC7AB07018A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD5EF70E-A5A9-4B47-A0BF-5B6C0987DFA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD5EF70E-A5A9-4B47-A0BF-5B6C0987DFA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD5EF70E-A5A9-4B47-A0BF-5B6C0987DFA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD5EF70E-A5A9-4B47-A0BF-5B6C0987DFA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{655034C3-8549-4D62-B127-44C5BF6CD643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{655034C3-8549-4D62-B127-44C5BF6CD643}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{655034C3-8549-4D62-B127-44C5BF6CD643}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{655034C3-8549-4D62-B127-44C5BF6CD643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A38FD2C4-721B-4275-BA7E-AC7AB07018A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A38FD2C4-721B-4275-BA7E-AC7AB07018A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A38FD2C4-721B-4275-BA7E-AC7AB07018A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A38FD2C4-721B-4275-BA7E-AC7AB07018A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42DE0903-46B6-4356-AA26-DF0F89F6749D}
+	EndGlobalSection
+EndGlobal
