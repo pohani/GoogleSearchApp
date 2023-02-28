@@ -21,7 +21,7 @@ namespace GoogleSearchApp.Controllers
 {
     public class SearchController : Controller
     {
-        private const String EXCEL_FILENAME = "ResultsFromGoogle.xlsx";
+        private const String EXCEL_FILENAME = "ResultFromGoogle.xlsx";
         private readonly ISearchService SearchService;
         private readonly IExportService ExportService;
 
